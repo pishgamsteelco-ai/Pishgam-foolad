@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>پیشگام فولاد پاسارگاد | تأمین فولاد</title>
+  <title>پیشگام فولاد پاسارگاد | تأمین آهن و فولاد</title>
 
   <meta name="description"
         content="پیشگام فولاد پاسارگاد، تأمین و فروش انواع محصولات فولادی، میلگرد، تیرآهن و مقاطع فولادی">
@@ -23,7 +23,7 @@
     body {
       font-family: Tahoma, Arial, sans-serif;
       background: #f5f7fa;
-      color: #102338;
+      color: #12263a;
       line-height: 1.9;
     }
 
@@ -38,41 +38,22 @@
     }
 
     .container {
-      width: 90%;
+      width: 92%;
       max-width: 1200px;
       margin: auto;
     }
 
-    /* نوار بالایی */
-    .topbar {
-      background: #071b2d;
-      color: white;
-      padding: 8px 0;
-      font-size: 13px;
-    }
+    /* ================= HEADER ================= */
 
-    .topbar-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .topbar .gold {
-      color: #e6b84d;
-      font-weight: bold;
-    }
-
-    /* هدر */
     header {
-      background: white;
+      background: #ffffff;
       position: sticky;
       top: 0;
       z-index: 1000;
       box-shadow: 0 2px 15px rgba(0,0,0,0.08);
     }
 
-    .navbar {
+    .header-inner {
       min-height: 90px;
       display: flex;
       align-items: center;
@@ -87,113 +68,102 @@
     }
 
     .brand img {
-      width: 62px;
-      height: 62px;
+      width: 75px;
+      height: 75px;
       object-fit: contain;
     }
 
     .brand-text h1 {
       font-size: 20px;
-      color: #071b2d;
-      margin-bottom: 0;
+      color: #09243d;
     }
 
-    .brand-text span {
-      color: #9a6d13;
+    .brand-text p {
       font-size: 12px;
+      color: #bd8b22;
     }
 
-    .nav-links {
+    nav {
       display: flex;
       align-items: center;
-      gap: 30px;
-      font-weight: bold;
+      gap: 28px;
       font-size: 14px;
+      font-weight: bold;
     }
 
-    .nav-links a {
+    nav a {
+      color: #26384a;
       transition: 0.3s;
     }
 
-    .nav-links a:hover {
-      color: #c9962e;
+    nav a:hover {
+      color: #c9962c;
     }
 
     .header-btn {
-      background: #071b2d;
-      color: white;
-      padding: 12px 22px;
-      border-radius: 9px;
-      font-weight: bold;
-      transition: 0.3s;
+      background: #09243d;
+      color: white !important;
+      padding: 12px 20px;
+      border-radius: 10px;
     }
 
     .header-btn:hover {
-      background: #c9962e;
-      color: #071b2d;
+      background: #c9962c;
     }
 
-    /* هیرو */
+    /* ================= HERO ================= */
+
     .hero {
-      min-height: 635px;
       background:
-        radial-gradient(circle at 20% 30%, rgba(201,150,46,0.13), transparent 30%),
-        linear-gradient(135deg, #071b2d, #0c304d 65%, #102f45);
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.08), transparent 30%),
+        linear-gradient(135deg, #071c2e, #0c304c, #09243d);
+
       color: white;
-      display: flex;
-      align-items: center;
-      position: relative;
-      overflow: hidden;
+      padding: 80px 0;
     }
 
-    .hero::before {
-      content: "";
-      position: absolute;
-      width: 500px;
-      height: 500px;
-      border: 1px solid rgba(230,184,77,0.15);
-      border-radius: 50%;
-      left: -180px;
-      top: -160px;
-    }
-
-    .hero-content {
+    .hero-inner {
+      min-height: 560px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
       gap: 70px;
-      position: relative;
-      z-index: 2;
     }
 
-    .hero-text {
-      text-align: right;
+    .hero-content {
+      order: 1;
+    }
+
+    .hero-image {
+      order: 2;
+      display: flex;
+      justify-content: center;
     }
 
     .badge {
       display: inline-block;
-      border: 1px solid rgba(230,184,77,0.55);
-      color: #e6b84d;
-      border-radius: 30px;
-      padding: 7px 16px;
-      margin-bottom: 18px;
+      border: 1px solid #c9962c;
+      color: #f0c75e;
+      padding: 7px 15px;
+      border-radius: 25px;
+      margin-bottom: 20px;
       font-size: 13px;
     }
 
     .hero h2 {
-      font-size: clamp(34px, 5vw, 60px);
-      line-height: 1.35;
+      font-size: clamp(35px, 5vw, 60px);
+      line-height: 1.3;
       margin-bottom: 20px;
     }
 
-    .hero h2 span {
-      color: #e6b84d;
+    .gold {
+      color: #e4b94f;
     }
 
     .hero p {
-      color: #d8e1e9;
-      font-size: 16px;
-      max-width: 650px;
+      color: #dbe5ed;
+      font-size: 17px;
+      max-width: 620px;
       margin-bottom: 30px;
     }
 
@@ -205,94 +175,54 @@
 
     .btn {
       display: inline-block;
-      padding: 13px 27px;
+      padding: 13px 25px;
       border-radius: 9px;
       font-weight: bold;
       transition: 0.3s;
-      cursor: pointer;
-      border: none;
-      font-size: 14px;
     }
 
-    .btn-primary {
-      background: #d6a63c;
-      color: #071b2d;
+    .btn-gold {
+      background: #d9a536;
+      color: #071c2e;
     }
 
-    .btn-primary:hover {
-      background: #edc568;
+    .btn-gold:hover {
+      background: #f0c75e;
       transform: translateY(-2px);
     }
 
     .btn-outline {
-      border: 1px solid #6f899c;
+      border: 1px solid #6d8497;
       color: white;
-      background: transparent;
     }
 
     .btn-outline:hover {
-      background: white;
-      color: #071b2d;
+      border-color: #d9a536;
+      color: #f0c75e;
     }
 
-    .hero-image-box {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.15);
-      padding: 25px;
-      border-radius: 22px;
-      max-width: 500px;
-      margin: auto;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.25);
-    }
-
-    .hero-image-box img {
+    .hero-card {
       width: 100%;
-      height: 350px;
+      max-width: 480px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 25px;
+      padding: 25px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    }
+
+    .hero-card img {
+      width: 100%;
+      height: 390px;
       object-fit: contain;
       background: white;
-      border-radius: 5px;
+      border-radius: 12px;
     }
 
-    /* آمار */
-    .stats {
-      margin-top: -45px;
-      position: relative;
-      z-index: 10;
-    }
+    /* ================= SERVICES ================= */
 
-    .stats-box {
-      background: white;
-      border-radius: 18px;
-      box-shadow: 0 10px 35px rgba(0,0,0,0.08);
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      overflow: hidden;
-    }
-
-    .stat {
-      padding: 25px;
-      text-align: center;
-      border-left: 1px solid #e8edf2;
-    }
-
-    .stat:last-child {
-      border-left: none;
-    }
-
-    .stat strong {
-      display: block;
-      font-size: 28px;
-      color: #bd8a25;
-    }
-
-    .stat span {
-      color: #657585;
-      font-size: 13px;
-    }
-
-    /* عنوان بخش */
     .section {
-      padding: 90px 0;
+      padding: 80px 0;
     }
 
     .section-title {
@@ -300,80 +230,67 @@
       margin-bottom: 45px;
     }
 
-    .section-title small {
-      color: #bd8a25;
-      font-weight: bold;
-    }
-
     .section-title h2 {
       font-size: 35px;
-      margin: 8px 0;
-      color: #071b2d;
+      color: #09243d;
+      margin-bottom: 8px;
     }
 
     .section-title p {
-      color: #667585;
-      max-width: 700px;
-      margin: auto;
-      font-size: 14px;
+      color: #697987;
     }
 
-    /* خدمات */
     .services {
-      background: #f5f7fa;
-    }
-
-    .service-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+      gap: 20px;
     }
 
     .service-card {
       background: white;
-      border: 1px solid #e2e8ee;
-      border-radius: 17px;
+      border: 1px solid #e3e8ed;
+      border-radius: 18px;
       padding: 30px;
-      min-height: 190px;
+      text-align: center;
       transition: 0.3s;
     }
 
     .service-card:hover {
       transform: translateY(-7px);
-      border-color: #d7ad54;
       box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+      border-color: #d9a536;
     }
 
     .icon {
-      width: 50px;
-      height: 50px;
+      width: 60px;
+      height: 60px;
+      border-radius: 15px;
+      background: #09243d;
+      color: #e4b94f;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #071b2d;
-      color: #e6b84d;
-      border-radius: 12px;
-      font-size: 22px;
-      margin-bottom: 20px;
+      margin: 0 auto 20px;
+      font-size: 28px;
     }
 
     .service-card h3 {
-      margin-bottom: 8px;
-      color: #071b2d;
-      font-size: 18px;
+      margin-bottom: 10px;
+      color: #09243d;
     }
 
     .service-card p {
-      color: #697888;
-      font-size: 13px;
+      color: #6d7984;
+      font-size: 14px;
     }
 
-    /* محصولات */
+    /* ================= PRODUCTS ================= */
+
+    #products {
+      background: #ffffff;
+    }
+
     .products {
-      background: white;
-    }
-
-    .product-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 25px;
@@ -381,7 +298,7 @@
 
     .product-card {
       background: white;
-      border: 1px solid #e0e6ec;
+      border: 1px solid #e0e5e9;
       border-radius: 18px;
       overflow: hidden;
       transition: 0.3s;
@@ -393,8 +310,11 @@
     }
 
     .product-image {
-      height: 220px;
-      background: #f2f4f6;
+      height: 240px;
+      background: #f3f4f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       overflow: hidden;
     }
 
@@ -405,138 +325,90 @@
     }
 
     .product-content {
-      padding: 23px;
+      padding: 22px;
     }
 
     .product-content h3 {
-      color: #071b2d;
+      color: #09243d;
       margin-bottom: 8px;
     }
 
     .product-content p {
-      color: #697888;
-      font-size: 13px;
+      color: #697987;
+      font-size: 14px;
       margin-bottom: 15px;
     }
 
-    .product-tag {
+    .product-btn {
       display: inline-block;
-      color: #a57516;
-      background: #fff7e3;
-      border-radius: 20px;
-      padding: 5px 12px;
-      font-size: 11px;
-      font-weight: bold;
-    }
-
-    /* مقاطع فولادی */
-    .sections {
-      background: #f5f7fa;
-    }
-
-    .section-products {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
-
-    .steel-section {
-      background: white;
-      border: 1px solid #e1e7ec;
-      border-radius: 15px;
-      padding: 22px;
-      text-align: center;
-      transition: 0.3s;
-    }
-
-    .steel-section:hover {
-      border-color: #d1a33b;
-      transform: translateY(-5px);
-    }
-
-    .steel-drawing {
-      height: 130px;
-      background: #f3f5f7;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 18px;
-      color: #263746;
-      font-size: 60px;
-      font-weight: bold;
-    }
-
-    .steel-section h3 {
-      margin-bottom: 5px;
-    }
-
-    .steel-section p {
-      color: #788795;
-      font-size: 12px;
-    }
-
-    /* درباره ما */
-    .about {
-      background: white;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    .about-text h2 {
-      font-size: 35px;
-      margin-bottom: 18px;
-    }
-
-    .about-text p {
-      color: #687887;
-      font-size: 14px;
-      margin-bottom: 18px;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-top: 25px;
-    }
-
-    .feature {
-      padding: 14px;
-      background: #f6f8fa;
-      border-radius: 10px;
-      font-weight: bold;
+      background: #09243d;
+      color: white;
+      padding: 9px 16px;
+      border-radius: 8px;
       font-size: 13px;
     }
 
-    .feature::before {
-      content: "✓";
-      color: #c4952d;
-      margin-left: 7px;
+    .product-btn:hover {
+      background: #c9962c;
     }
 
-    .about-logo {
-      background: #f5f7fa;
-      padding: 40px;
+    /* ================= ABOUT ================= */
+
+    .about {
+      background: #eef2f5;
+    }
+
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-image {
+      background: white;
       border-radius: 20px;
-      text-align: center;
+      padding: 20px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.07);
     }
 
-    .about-logo img {
-      width: 330px;
-      height: 330px;
+    .about-image img {
+      width: 100%;
+      height: 350px;
       object-fit: contain;
-      margin: auto;
     }
 
-    /* تماس */
+    .about-content h2 {
+      font-size: 35px;
+      color: #09243d;
+      margin-bottom: 18px;
+    }
+
+    .about-content p {
+      color: #5d6b77;
+      margin-bottom: 15px;
+    }
+
+    .checks {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .checks li {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .checks li::before {
+      content: "✓";
+      color: #c9962c;
+      margin-left: 10px;
+    }
+
+    /* ================= CONTACT ================= */
+
     .contact {
-      background: #071b2d;
+      background: #09243d;
       color: white;
     }
 
@@ -545,151 +417,68 @@
     }
 
     .contact .section-title p {
-      color: #bdcbd5;
+      color: #c9d5df;
     }
 
-    .contact-grid {
+    .contact-box {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
 
-    .contact-card {
+    .contact-item {
+      background: rgba(255,255,255,0.07);
       border: 1px solid rgba(255,255,255,0.12);
-      background: rgba(255,255,255,0.05);
       border-radius: 15px;
       padding: 25px;
       text-align: center;
     }
 
-    .contact-card .icon {
-      margin: 0 auto 15px;
-    }
-
-    .contact-card h3 {
+    .contact-item strong {
+      display: block;
+      color: #e4b94f;
       margin-bottom: 8px;
     }
 
-    .contact-card p {
-      color: #c4d0d8;
-      font-size: 13px;
-    }
+    /* ================= FOOTER ================= */
 
-    /* فرم */
-    .contact-form {
-      background: white;
-      color: #071b2d;
-      max-width: 850px;
-      margin: 40px auto 0;
-      padding: 30px;
-      border-radius: 18px;
-    }
-
-    .form-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-    }
-
-    .field {
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
-
-    .field.full {
-      grid-column: 1 / -1;
-    }
-
-    .field label {
-      font-size: 13px;
-      font-weight: bold;
-    }
-
-    .field input,
-    .field textarea,
-    .field select {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #d9e0e6;
-      border-radius: 8px;
-      outline: none;
-      font-family: inherit;
-      font-size: 13px;
-    }
-
-    .field textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-
-    .field input:focus,
-    .field textarea:focus,
-    .field select:focus {
-      border-color: #c4952d;
-    }
-
-    /* فوتر */
     footer {
-      background: #041321;
-      color: #aebbc4;
+      background: #061827;
+      color: #c5d0d9;
       padding: 25px 0;
       text-align: center;
-      font-size: 12px;
+      font-size: 13px;
     }
 
-    footer strong {
-      color: #e6b84d;
-    }
+    /* ================= RESPONSIVE ================= */
 
-    /* دکمه بازگشت بالا */
-    .back-top {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background: #c4952d;
-      color: #071b2d;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-      font-weight: bold;
-      z-index: 100;
-    }
-
-    /* موبایل */
     @media (max-width: 900px) {
 
-      .navbar {
-        flex-wrap: wrap;
+      .header-inner {
+        flex-direction: column;
         padding: 15px 0;
       }
 
-      .nav-links {
-        order: 3;
-        width: 100%;
-        justify-content: center;
+      nav {
         gap: 15px;
         flex-wrap: wrap;
+        justify-content: center;
       }
 
-      .hero-content,
-      .about-grid {
+      .hero-inner {
         grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding: 70px 0;
-      }
-
-      .hero-text {
         text-align: center;
       }
 
-      .hero-text p {
+      .hero-content {
+        order: 2;
+      }
+
+      .hero-image {
+        order: 1;
+      }
+
+      .hero p {
         margin-left: auto;
         margin-right: auto;
       }
@@ -698,37 +487,45 @@
         justify-content: center;
       }
 
-      .stats-box {
-        grid-template-columns: 1fr 1fr;
+      .services,
+      .products {
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      .stat:nth-child(2) {
-        border-left: none;
+      .about-inner {
+        grid-template-columns: 1fr;
       }
 
-      .service-grid,
-      .product-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .section-products {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .contact-grid {
+      .contact-box {
         grid-template-columns: 1fr;
       }
     }
 
     @media (max-width: 600px) {
 
-      .topbar-content {
-        justify-content: center;
-        text-align: center;
+      .services,
+      .products {
+        grid-template-columns: 1fr;
       }
 
-      .topbar-content span:last-child {
-        display: none;
+      .hero {
+        padding: 50px 0;
+      }
+
+      .hero-card img {
+        height: 280px;
+      }
+
+      .hero h2 {
+        font-size: 34px;
+      }
+
+      .section {
+        padding: 55px 0;
+      }
+
+      .section-title h2 {
+        font-size: 28px;
       }
 
       .brand-text h1 {
@@ -736,67 +533,8 @@
       }
 
       .brand img {
-        width: 50px;
-        height: 50px;
-      }
-
-      .header-btn {
-        padding: 9px 13px;
-        font-size: 12px;
-      }
-
-      .hero {
-        min-height: auto;
-      }
-
-      .hero h2 {
-        font-size: 34px;
-      }
-
-      .hero-image-box {
-        padding: 15px;
-      }
-
-      .hero-image-box img {
-        height: 260px;
-      }
-
-      .stats-box {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .stat {
-        padding: 18px 8px;
-      }
-
-      .stat strong {
-        font-size: 22px;
-      }
-
-      .service-grid,
-      .product-grid,
-      .section-products {
-        grid-template-columns: 1fr;
-      }
-
-      .features {
-        grid-template-columns: 1fr;
-      }
-
-      .form-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .field.full {
-        grid-column: auto;
-      }
-
-      .section {
-        padding: 65px 0;
-      }
-
-      .section-title h2 {
-        font-size: 28px;
+        width: 60px;
+        height: 60px;
       }
     }
   </style>
@@ -804,822 +542,520 @@
 
 <body>
 
-  <!-- نوار بالایی -->
-  <div class="topbar">
-    <div class="container topbar-content">
-      <span>تأمین مطمئن، کیفیت پایدار</span>
-      <span class="gold">پیشگام فولاد پاسارگاد</span>
-    </div>
-  </div>
+<!-- ================= HEADER ================= -->
 
+<header>
+  <div class="container header-inner">
 
-  <!-- هدر -->
-  <header>
-    <div class="container navbar">
+    <a href="#home" class="brand">
+      <img src="./logo.png" alt="لوگوی پیشگام فولاد پاسارگاد">
 
-      <a href="#home" class="brand">
+      <div class="brand-text">
+        <h1>پیشگام فولاد پاسارگاد</h1>
+        <p>تأمین و فروش محصولات فولادی</p>
+      </div>
+    </a>
 
-        <!-- لوگو -->
-        <img src="logo.png" alt="لوگوی پیشگام فولاد پاسارگاد">
-
-        <div class="brand-text">
-          <h1>پیشگام فولاد پاسارگاد</h1>
-          <span>تأمین و فروش محصولات فولادی</span>
-        </div>
-
-      </a>
-
-      <nav class="nav-links">
-        <a href="#home">خانه</a>
-        <a href="#products">محصولات</a>
-        <a href="#services">خدمات</a>
-        <a href="#about">درباره ما</a>
-        <a href="#contact">تماس با ما</a>
-      </nav>
+    <nav>
+      <a href="#home">خانه</a>
+      <a href="#products">محصولات</a>
+      <a href="#about">درباره ما</a>
+      <a href="#services">خدمات</a>
+      <a href="#contact">تماس با ما</a>
 
       <a href="#contact" class="header-btn">
         استعلام قیمت
       </a>
+    </nav>
 
-    </div>
-  </header>
+  </div>
+</header>
 
 
-  <!-- بخش اصلی -->
-  <main id="home">
+<!-- ================= HERO ================= -->
 
-    <!-- Hero -->
-    <section class="hero">
+<section class="hero" id="home">
 
-      <div class="container hero-content">
+  <div class="container hero-inner">
 
-        <div class="hero-text">
+    <div class="hero-content">
 
-          <div class="badge">
-            ★ تأمین‌کننده محصولات فولادی
-          </div>
+      <span class="badge">
+        ★ تأمین‌کننده محصولات فولادی
+      </span>
 
-          <h2>
-            پیشگام فولاد
-            <span>پاسارگاد</span>
-          </h2>
-
-          <p>
-            تأمین و فروش انواع آهن‌آلات و محصولات فولادی برای
-            پروژه‌های ساختمانی، صنعتی و عمرانی با تمرکز بر کیفیت،
-            قیمت مناسب و تحویل مطمئن.
-          </p>
-
-          <div class="buttons">
-            <a href="#products" class="btn btn-primary">
-              مشاهده محصولات
-            </a>
-
-            <a href="#contact" class="btn btn-outline">
-              درخواست مشاوره
-            </a>
-          </div>
-
-        </div>
-
-
-        <!-- عکس اصلی -->
-        <div class="hero-image-box">
-          <img
-            src="logo.png"
-            alt="پیشگام فولاد پاسارگاد">
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- آمار -->
-    <section class="stats">
-
-      <div class="container">
-
-        <div class="stats-box">
-
-          <div class="stat">
-            <strong>۱۰۰٪</strong>
-            <span>تضمین کیفیت</span>
-          </div>
-
-          <div class="stat">
-            <strong>۲۴/۷</strong>
-            <span>پشتیبانی و پاسخگویی</span>
-          </div>
-
-          <div class="stat">
-            <strong>سریع</strong>
-            <span>تأمین و ارسال</span>
-          </div>
-
-          <div class="stat">
-            <strong>مناسب</strong>
-            <span>قیمت‌گذاری رقابتی</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- خدمات -->
-    <section class="section services" id="services">
-
-      <div class="container">
-
-        <div class="section-title">
-
-          <small>خدمات ما</small>
-
-          <h2>راهکارهای تأمین فولاد</h2>
-
-          <p>
-            از انتخاب محصول تا استعلام قیمت و هماهنگی تأمین،
-            در کنار شما هستیم.
-          </p>
-
-        </div>
-
-
-        <div class="service-grid">
-
-          <div class="service-card">
-
-            <div class="icon">✓</div>
-
-            <h3>مشاوره تخصصی</h3>
-
-            <p>
-              راهنمایی برای انتخاب محصول مناسب با توجه به نیاز پروژه
-              و مشخصات فنی.
-            </p>
-
-          </div>
-
-
-          <div class="service-card">
-
-            <div class="icon">◇</div>
-
-            <h3>استعلام و اعلام قیمت</h3>
-
-            <p>
-              دریافت درخواست شما و ارائه اطلاعات و قیمت مناسب
-              متناسب با محصول مورد نیاز.
-            </p>
-
-          </div>
-
-
-          <div class="service-card">
-
-            <div class="icon">⚙</div>
-
-            <h3>تأمین محصولات فولادی</h3>
-
-            <p>
-              تأمین انواع محصولات فولادی مورد نیاز پروژه‌های ساختمانی،
-              عمرانی و صنعتی.
-            </p>
-
-          </div>
-
-
-          <div class="service-card">
-
-            <div class="icon">☎</div>
-
-            <h3>پاسخگویی سریع</h3>
-
-            <p>
-              ارتباط مستقیم برای پاسخ به سؤالات، درخواست قیمت
-              و پیگیری سفارش.
-            </p>
-
-          </div>
-
-
-          <div class="service-card">
-
-            <div class="icon">★</div>
-
-            <h3>کیفیت و اطمینان</h3>
-
-            <p>
-              تمرکز بر کیفیت محصول و ایجاد همکاری بلندمدت
-              با مشتریان.
-            </p>
-
-          </div>
-
-
-          <div class="service-card">
-
-            <div class="icon">🚚</div>
-
-            <h3>هماهنگی تأمین</h3>
-
-            <p>
-              پیگیری سفارش و هماهنگی فرآیند تأمین و ارسال متناسب
-              با شرایط پروژه.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- محصولات -->
-    <section class="section products" id="products">
-
-      <div class="container">
-
-        <div class="section-title">
-
-          <small>محصولات</small>
-
-          <h2>محصولات فولادی</h2>
-
-          <p>
-            انواع محصولات فولادی مورد نیاز پروژه‌های ساختمانی،
-            صنعتی و عمرانی.
-          </p>
-
-        </div>
-
-
-        <div class="product-grid">
-
-          <!-- میلگرد -->
-          <div class="product-card">
-
-            <div class="product-image">
-              <img
-                src="rebar.jpg"
-                alt="میلگرد فولادی"
-                loading="lazy">
-            </div>
-
-            <div class="product-content">
-
-              <h3>میلگرد فولادی</h3>
-
-              <p>
-                تأمین میلگرد در سایزها و مشخصات مورد نیاز پروژه‌های
-                ساختمانی و عمرانی.
-              </p>
-
-              <span class="product-tag">
-                استعلام قیمت
-              </span>
-
-            </div>
-
-          </div>
-
-
-          <!-- تیرآهن -->
-          <div class="product-card">
-
-            <div class="product-image">
-
-              <div class="steel-drawing">
-                I
-              </div>
-
-            </div>
-
-            <div class="product-content">
-
-              <h3>تیرآهن</h3>
-
-              <p>
-                تأمین تیرآهن مورد نیاز پروژه‌های ساختمانی و
-                سازه‌های فولادی.
-              </p>
-
-              <span class="product-tag">
-                استعلام قیمت
-              </span>
-
-            </div>
-
-          </div>
-
-
-          <!-- نبشی -->
-          <div class="product-card">
-
-            <div class="product-image">
-
-              <div class="steel-drawing">
-                L
-              </div>
-
-            </div>
-
-            <div class="product-content">
-
-              <h3>نبشی</h3>
-
-              <p>
-                تأمین نبشی فولادی برای مصارف ساختمانی و صنعتی.
-              </p>
-
-              <span class="product-tag">
-                استعلام قیمت
-              </span>
-
-            </div>
-
-          </div>
-
-
-          <!-- ناودانی -->
-          <div class="product-card">
-
-            <div class="product-image">
-
-              <div class="steel-drawing">
-                U
-              </div>
-
-            </div>
-
-            <div class="product-content">
-
-              <h3>ناودانی</h3>
-
-              <p>
-                مناسب برای استفاده در سازه‌ها و پروژه‌های صنعتی.
-              </p>
-
-              <span class="product-tag">
-                استعلام قیمت
-              </span>
-
-            </div>
-
-          </div>
-
-
-          <!-- قوطی -->
-          <div class="product-card">
-
-            <div class="product-image">
-
-              <div class="steel-drawing">
-                □
-              </div>
-
-            </div>
-
-            <div class="product-content">
-
-              <h3>قوطی و پروفیل</h3>
-
-              <p>
-                تأمین انواع قوطی و پروفیل فولادی برای کاربردهای
-                ساختمانی و صنعتی.
-              </p>
-
-              <span class="product-tag">
-                استعلام قیمت
-              </span>
-
-            </div>
-
-          </div>
-
-
-          <!-- ورق -->
-          <div class="product-card">
-
-            <div class="product-image">
-
-              <div class="steel-drawing">
-                ▬
-              </div>
-
-            </div>
-
-            <div class="product-content">
-
-              <h3>ورق فولادی</h3>
-
-              <p>
-                تأمین ورق‌های فولادی متناسب با نیاز و مشخصات پروژه.
-              </p>
-
-              <span class="product-tag">
-                استعلام قیمت
-              </span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- مقاطع فولادی -->
-    <section class="section sections">
-
-      <div class="container">
-
-        <div class="section-title">
-
-          <small>مقاطع فولادی</small>
-
-          <h2>مقاطع پرکاربرد</h2>
-
-          <p>
-            بخشی از مقاطع فولادی مورد استفاده در پروژه‌های مختلف.
-          </p>
-
-        </div>
-
-
-        <div class="section-products">
-
-          <div class="steel-section">
-
-            <div class="steel-drawing">
-              I
-            </div>
-
-            <h3>تیرآهن</h3>
-
-            <p>مقطع I شکل</p>
-
-          </div>
-
-
-          <div class="steel-section">
-
-            <div class="steel-drawing">
-              U
-            </div>
-
-            <h3>ناودانی</h3>
-
-            <p>مقطع U شکل</p>
-
-          </div>
-
-
-          <div class="steel-section">
-
-            <div class="steel-drawing">
-              L
-            </div>
-
-            <h3>نبشی</h3>
-
-            <p>مقطع L شکل</p>
-
-          </div>
-
-
-          <div class="steel-section">
-
-            <div class="steel-drawing">
-              □
-            </div>
-
-            <h3>قوطی</h3>
-
-            <p>مقطع چهارگوش</p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- درباره ما -->
-    <section class="section about" id="about">
-
-      <div class="container about-grid">
-
-        <div class="about-text">
-
-          <small style="color:#bd8a25;font-weight:bold;">
-            درباره ما
-          </small>
-
-          <h2>
-            همراه مطمئن شما در تأمین فولاد
-          </h2>
-
-          <p>
-            پیشگام فولاد پاسارگاد با هدف ارائه خدمات تأمین و فروش
-            محصولات فولادی، تلاش می‌کند نیاز مشتریان و پروژه‌ها را
-            با کیفیت مناسب، قیمت رقابتی و پاسخگویی سریع تأمین کند.
-          </p>
-
-          <p>
-            هدف ما ایجاد همکاری بلندمدت و ارائه تجربه‌ای مطمئن
-            در فرآیند خرید و تأمین محصولات فولادی است.
-          </p>
-
-
-          <div class="features">
-
-            <div class="feature">
-              تأمین مطمئن
-            </div>
-
-            <div class="feature">
-              قیمت رقابتی
-            </div>
-
-            <div class="feature">
-              پاسخگویی سریع
-            </div>
-
-            <div class="feature">
-              مشاوره تخصصی
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <div class="about-logo">
-
-          <img
-            src="logo.png"
-            alt="پیشگام فولاد پاسارگاد">
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- تماس -->
-    <section class="section contact" id="contact">
-
-      <div class="container">
-
-        <div class="section-title">
-
-          <small>ارتباط با ما</small>
-
-          <h2>برای استعلام قیمت با ما تماس بگیرید</h2>
-
-          <p>
-            برای دریافت قیمت و مشاوره درباره محصولات فولادی،
-            درخواست خود را برای ما ارسال کنید.
-          </p>
-
-        </div>
-
-
-        <div class="contact-grid">
-
-          <div class="contact-card">
-
-            <div class="icon">☎</div>
-
-            <h3>تماس تلفنی</h3>
-
-            <p>
-              برای درج شماره تماس این بخش را ویرایش کنید.
-            </p>
-
-          </div>
-
-
-          <div class="contact-card">
-
-            <div class="icon">✉</div>
-
-            <h3>ایمیل</h3>
-
-            <p>
-              برای درج ایمیل مجموعه این بخش را ویرایش کنید.
-            </p>
-
-          </div>
-
-
-          <div class="contact-card">
-
-            <div class="icon">⌖</div>
-
-            <h3>آدرس</h3>
-
-            <p>
-              آدرس دفتر و محل فعالیت مجموعه را اینجا وارد کنید.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <!-- فرم درخواست -->
-        <div class="contact-form">
-
-          <h3 style="margin-bottom:20px;">
-            درخواست استعلام قیمت
-          </h3>
-
-          <form>
-
-            <div class="form-grid">
-
-              <div class="field">
-
-                <label for="name">
-                  نام و نام خانوادگی
-                </label>
-
-                <input
-                  id="name"
-                  type="text"
-                  placeholder="نام خود را وارد کنید">
-
-              </div>
-
-
-              <div class="field">
-
-                <label for="phone">
-                  شماره تماس
-                </label>
-
-                <input
-                  id="phone"
-                  type="tel"
-                  placeholder="09xxxxxxxxx">
-
-              </div>
-
-
-              <div class="field">
-
-                <label for="product">
-                  محصول مورد نظر
-                </label>
-
-                <select id="product">
-
-                  <option>
-                    انتخاب محصول
-                  </option>
-
-                  <option>
-                    میلگرد
-                  </option>
-
-                  <option>
-                    تیرآهن
-                  </option>
-
-                  <option>
-                    نبشی
-                  </option>
-
-                  <option>
-                    ناودانی
-                  </option>
-
-                  <option>
-                    قوطی و پروفیل
-                  </option>
-
-                  <option>
-                    ورق فولادی
-                  </option>
-
-                </select>
-
-              </div>
-
-
-              <div class="field">
-
-                <label for="amount">
-                  مقدار مورد نیاز
-                </label>
-
-                <input
-                  id="amount"
-                  type="text"
-                  placeholder="مثلاً 5 تن">
-
-              </div>
-
-
-              <div class="field full">
-
-                <label for="message">
-                  توضیحات
-                </label>
-
-                <textarea
-                  id="message"
-                  placeholder="سایز، نوع محصول، محل تحویل و توضیحات مورد نیاز را بنویسید"></textarea>
-
-              </div>
-
-            </div>
-
-
-            <button
-              type="button"
-              class="btn btn-primary"
-              style="margin-top:20px;"
-              onclick="sendRequest()">
-
-              ارسال درخواست
-
-            </button>
-
-          </form>
-
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- فوتر -->
-  <footer>
-
-    <div class="container">
+      <h2>
+        پیشگام <span class="gold">فولاد</span> پاسارگاد
+      </h2>
 
       <p>
-        © 2026
-        <strong>پیشگام فولاد پاسارگاد</strong>
-        - تمامی حقوق محفوظ است.
+        تأمین و فروش انواع آهن‌آلات و محصولات فولادی
+        برای پروژه‌های ساختمانی، صنعتی و عمرانی،
+        با تمرکز بر کیفیت، قیمت مناسب و تحویل مطمئن.
+      </p>
+
+      <div class="buttons">
+
+        <a href="#products" class="btn btn-gold">
+          مشاهده محصولات
+        </a>
+
+        <a href="#contact" class="btn btn-outline">
+          درخواست مشاوره
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+      <div class="hero-card">
+
+        <!-- لوگو -->
+        <img
+          src="./logo.png"
+          alt="پیشگام فولاد پاسارگاد"
+        >
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section" id="services">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>راهکارهای تأمین فولاد</h2>
+
+      <p>
+        از انتخاب محصول تا استعلام قیمت و هماهنگی تأمین، در کنار شما هستیم.
+      </p>
+    </div>
+
+
+    <div class="services">
+
+      <div class="service-card">
+
+        <div class="icon">✓</div>
+
+        <h3>مشاوره تخصصی</h3>
+
+        <p>
+          راهنمایی برای انتخاب محصول مناسب با توجه به نیاز پروژه و مشخصات فنی.
+        </p>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <div class="icon">◇</div>
+
+        <h3>استعلام و اعلام قیمت</h3>
+
+        <p>
+          دریافت درخواست شما و ارائه اطلاعات و قیمت مناسب متناسب با محصول مورد نیاز.
+        </p>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <div class="icon">⚙</div>
+
+        <h3>تأمین محصولات فولادی</h3>
+
+        <p>
+          تأمین انواع محصولات فولادی مورد نیاز پروژه‌های ساختمانی، عمرانی و صنعتی.
+        </p>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <div class="icon">☎</div>
+
+        <h3>پاسخگویی سریع</h3>
+
+        <p>
+          ارتباط مستقیم برای پاسخ به سوالات، درخواست قیمت و پیگیری سفارش.
+        </p>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <div class="icon">★</div>
+
+        <h3>کیفیت و اطمینان</h3>
+
+        <p>
+          تمرکز بر کیفیت محصول و ایجاد همکاری بلندمدت با مشتریان.
+        </p>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <div class="icon">🚚</div>
+
+        <h3>هماهنگی تأمین</h3>
+
+        <p>
+          پیگیری و هماهنگی فرآیند تأمین و ارسال متناسب با شرایط پروژه.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="section" id="products">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>محصولات فولادی</h2>
+
+      <p>
+        انواع مقاطع و محصولات فولادی مورد نیاز پروژه‌ها
       </p>
 
     </div>
 
-  </footer>
+
+    <div class="products">
 
 
-  <!-- بازگشت به بالا -->
-  <a href="#home" class="back-top">
-    ↑
-  </a>
+      <!-- میلگرد -->
+
+      <div class="product-card">
+
+        <div class="product-image">
+
+          <!-- این عکس از فایل rebar.jpg استفاده می‌کند -->
+          <img
+            src="./rebar.jpg"
+            alt="میلگرد فولادی"
+          >
+
+        </div>
+
+        <div class="product-content">
+
+          <h3>میلگرد</h3>
+
+          <p>
+            تأمین میلگرد فولادی در سایزها و مشخصات مختلف برای پروژه‌های ساختمانی و عمرانی.
+          </p>
+
+          <a href="#contact" class="product-btn">
+            استعلام قیمت
+          </a>
+
+        </div>
+
+      </div>
 
 
-  <script>
+      <!-- تیرآهن -->
 
-    function sendRequest() {
+      <div class="product-card">
 
-      const name = document.getElementById("name").value.trim();
-      const phone = document.getElementById("phone").value.trim();
-      const product = document.getElementById("product").value;
-      const amount = document.getElementById("amount").value.trim();
-      const message = document.getElementById("message").value.trim();
+        <div class="product-image">
 
-      if (!name || !phone || product === "انتخاب محصول") {
+          <img
+            src="./rebar.jpg"
+            alt="تیرآهن فولادی"
+          >
 
-        alert("لطفاً نام، شماره تماس و محصول مورد نظر را وارد کنید.");
+        </div>
 
-        return;
-      }
+        <div class="product-content">
 
-      alert(
-        "درخواست شما ثبت شد.\n\n" +
-        "نام: " + name + "\n" +
-        "شماره تماس: " + phone + "\n" +
-        "محصول: " + product + "\n" +
-        "مقدار: " + amount
-      );
+          <h3>تیرآهن</h3>
 
-    }
+          <p>
+            تأمین تیرآهن مورد نیاز پروژه‌های ساختمانی و سازه‌های فولادی.
+          </p>
 
-  </script>
+          <a href="#contact" class="product-btn">
+            استعلام قیمت
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- نبشی و ناودانی -->
+
+      <div class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="./rebar.jpg"
+            alt="نبشی و ناودانی"
+          >
+
+        </div>
+
+        <div class="product-content">
+
+          <h3>نبشی و ناودانی</h3>
+
+          <p>
+            تأمین انواع نبشی و ناودانی برای مصارف ساختمانی و صنعتی.
+          </p>
+
+          <a href="#contact" class="product-btn">
+            استعلام قیمت
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- قوطی و پروفیل -->
+
+      <div class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="./rebar.jpg"
+            alt="قوطی و پروفیل"
+          >
+
+        </div>
+
+        <div class="product-content">
+
+          <h3>قوطی و پروفیل</h3>
+
+          <p>
+            تأمین انواع قوطی و پروفیل فولادی برای پروژه‌های مختلف.
+          </p>
+
+          <a href="#contact" class="product-btn">
+            استعلام قیمت
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- ورق فولادی -->
+
+      <div class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="./rebar.jpg"
+            alt="ورق فولادی"
+          >
+
+        </div>
+
+        <div class="product-content">
+
+          <h3>ورق فولادی</h3>
+
+          <p>
+            تأمین ورق فولادی مورد نیاز پروژه‌های ساختمانی، صنعتی و عمرانی.
+          </p>
+
+          <a href="#contact" class="product-btn">
+            استعلام قیمت
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- سایر مقاطع -->
+
+      <div class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="./rebar.jpg"
+            alt="مقاطع فولادی"
+          >
+
+        </div>
+
+        <div class="product-content">
+
+          <h3>سایر مقاطع فولادی</h3>
+
+          <p>
+            تأمین سایر مقاطع و محصولات فولادی متناسب با نیاز پروژه.
+          </p>
+
+          <a href="#contact" class="product-btn">
+            استعلام قیمت
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section about" id="about">
+
+  <div class="container about-inner">
+
+    <div class="about-image">
+
+      <img
+        src="./logo.png"
+        alt="پیشگام فولاد پاسارگاد"
+      >
+
+    </div>
+
+
+    <div class="about-content">
+
+      <h2>درباره پیشگام فولاد پاسارگاد</h2>
+
+      <p>
+        پیشگام فولاد پاسارگاد با هدف تأمین مطمئن محصولات فولادی
+        و ارائه خدمات مناسب به فعالان حوزه ساختمان، صنعت و عمران فعالیت می‌کند.
+      </p>
+
+      <p>
+        هدف ما ایجاد یک همکاری مطمئن، سریع و بلندمدت با مشتریان
+        و تأمین محصولات با کیفیت و قیمت مناسب است.
+      </p>
+
+      <ul class="checks">
+
+        <li>تأمین محصولات فولادی</li>
+
+        <li>مشاوره و راهنمایی خرید</li>
+
+        <li>استعلام قیمت و هماهنگی سفارش</li>
+
+        <li>تمرکز بر کیفیت و رضایت مشتری</li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section contact" id="contact">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>تماس با ما</h2>
+
+      <p>
+        برای استعلام قیمت و دریافت مشاوره با ما در ارتباط باشید.
+      </p>
+
+    </div>
+
+
+    <div class="contact-box">
+
+
+      <div class="contact-item">
+
+        <strong>☎ تلفن</strong>
+
+        <span>
+          شماره تماس خود را اینجا وارد کنید
+        </span>
+
+      </div>
+
+
+      <div class="contact-item">
+
+        <strong>📱 موبایل</strong>
+
+        <span>
+          شماره موبایل خود را اینجا وارد کنید
+        </span>
+
+      </div>
+
+
+      <div class="contact-item">
+
+        <strong>📍 آدرس</strong>
+
+        <span>
+          آدرس دفتر یا محل فعالیت را اینجا وارد کنید
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <div class="container">
+
+    © 2026 پیشگام فولاد پاسارگاد — تمامی حقوق محفوظ است.
+
+  </div>
+
+</footer>
+
 
 </body>
 </html>
