@@ -7,857 +7,952 @@
 <title>پیشگام فولاد پاسارگاد | تأمین و فروش محصولات فولادی</title>
 
 <meta name="description"
-content="پیشگام فولاد پاسارگاد، تأمین و فروش محصولات فولادی و ارائه خدمات تخصصی به پروژه‌های ساختمانی و صنعتی.">
+content="پیشگام فولاد پاسارگاد؛ تأمین و فروش محصولات فولادی، استعلام قیمت و مشاوره تخصصی برای پروژه‌های ساختمانی و صنعتی.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
 
 :root{
-  --navy:#071a2d;
-  --navy2:#102c46;
-  --blue:#17476d;
-  --gold:#b88a2b;
-  --gold2:#d1a94f;
-  --white:#ffffff;
-  --light:#f4f6f8;
-  --text:#17212b;
-  --muted:#687581;
-  --border:#dfe5ea;
-  --shadow:0 15px 45px rgba(7,26,45,.10);
+    --navy:#071a2d;
+    --navy2:#0d2942;
+    --blue:#123d63;
+    --gold:#c89b3c;
+    --gold2:#e0bd6a;
+    --white:#ffffff;
+    --light:#f4f7fa;
+    --text:#17212b;
+    --muted:#667585;
+    --border:#dce4eb;
+    --green:#16a765;
+    --shadow:0 15px 45px rgba(7,26,45,.10);
 }
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 html{
-  scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:'Vazirmatn',Tahoma,Arial,sans-serif;
-  background:var(--light);
-  color:var(--text);
-  line-height:1.9;
+    font-family:"Vazirmatn",Tahoma,sans-serif;
+    background:#fff;
+    color:var(--text);
+    line-height:1.9;
 }
 
 a{
-  text-decoration:none;
-  color:inherit;
+    text-decoration:none;
+    color:inherit;
+}
+
+button,
+input,
+textarea,
+select{
+    font-family:inherit;
 }
 
 .container{
-  width:min(1180px,92%);
-  margin:auto;
+    width:min(1180px,92%);
+    margin:auto;
 }
 
-/* TOP */
+/* TOP BAR */
 
 .topbar{
-  background:#050f1a;
-  color:white;
-  font-size:13px;
+    background:var(--navy);
+    color:#fff;
+    font-size:13px;
 }
 
 .topbar-inner{
-  min-height:42px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:15px;
+    min-height:42px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
 }
 
-.top-contact{
-  display:flex;
-  gap:20px;
-  flex-wrap:wrap;
+.topbar a{
+    color:#fff;
 }
 
-.top-contact a:hover{
-  color:var(--gold2);
+.topbar a:hover{
+    color:var(--gold2);
+}
+
+.top-links{
+    display:flex;
+    align-items:center;
+    gap:22px;
 }
 
 /* HEADER */
 
 header{
-  background:white;
-  border-bottom:1px solid var(--border);
-  position:sticky;
-  top:0;
-  z-index:100;
+    background:#fff;
+    border-bottom:1px solid var(--border);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 20px rgba(0,0,0,.04);
+}
+
+.navbar{
+    min-height:82px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:13px;
+    font-weight:900;
+    color:var(--navy);
+    font-size:20px;
+    white-space:nowrap;
+}
+
+.logo{
+    width:48px;
+    height:48px;
+    border-radius:12px;
+    background:linear-gradient(145deg,var(--navy),var(--blue));
+    border:2px solid var(--gold);
+    color:var(--gold2);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:17px;
+    font-weight:900;
+    box-shadow:0 6px 18px rgba(7,26,45,.18);
+}
+
+.logo small{
+    display:block;
+    font-size:10px;
+    margin-top:-4px;
 }
 
 .nav{
-  min-height:82px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:25px;
+    display:flex;
+    align-items:center;
+    gap:26px;
+    color:#344554;
+    font-size:14px;
+    font-weight:600;
 }
 
-/* LOGO */
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
+.nav a{
+    transition:.2s;
 }
 
-.brand-logo{
-  width:54px;
-  height:54px;
-  border-radius:13px;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  background:linear-gradient(135deg,var(--navy),var(--navy2));
-  color:white;
-
-  border:2px solid var(--gold);
-
-  font-family:Arial,sans-serif;
-  font-size:18px;
-  font-weight:900;
-
-  box-shadow:0 7px 20px rgba(7,26,45,.20);
+.nav a:hover{
+    color:var(--gold);
 }
 
-.brand-name{
-  font-size:20px;
-  font-weight:900;
-  color:var(--navy);
-  white-space:nowrap;
+.nav-actions{
+    display:flex;
+    gap:10px;
 }
-
-.brand-name span{
-  display:block;
-  font-size:10px;
-  color:var(--muted);
-  font-weight:500;
-}
-
-/* MENU */
-
-.menu{
-  display:flex;
-  align-items:center;
-  gap:24px;
-  font-size:14px;
-  font-weight:600;
-}
-
-.menu a{
-  color:#263542;
-  transition:.2s;
-}
-
-.menu a:hover{
-  color:var(--gold);
-}
-
-/* BUTTON */
 
 .btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:7px;
+    border:0;
+    cursor:pointer;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:12px 20px;
+    border-radius:9px;
+    font-weight:700;
+    transition:.25s;
+}
 
-  min-height:45px;
-  padding:0 19px;
+.btn-primary{
+    background:var(--navy);
+    color:#fff;
+}
 
-  border-radius:9px;
-  border:1px solid transparent;
-
-  font-size:13px;
-  font-weight:800;
-
-  cursor:pointer;
-  transition:.2s;
+.btn-primary:hover{
+    background:var(--blue);
+    transform:translateY(-2px);
 }
 
 .btn-gold{
-  background:var(--gold);
-  color:white;
+    background:var(--gold);
+    color:#071a2d;
 }
 
 .btn-gold:hover{
-  background:#9b731e;
-  transform:translateY(-2px);
+    background:var(--gold2);
+    transform:translateY(-2px);
 }
 
 .btn-outline{
-  border-color:var(--navy);
-  color:var(--navy);
-  background:white;
+    background:#fff;
+    border:1px solid var(--navy);
+    color:var(--navy);
 }
 
 .btn-outline:hover{
-  background:#f2f5f7;
+    background:var(--navy);
+    color:#fff;
 }
 
 /* HERO */
 
 .hero{
-  position:relative;
-  overflow:hidden;
-
-  color:white;
-
-  background:
-    linear-gradient(
-      120deg,
-      rgba(3,14,25,.98),
-      rgba(7,26,45,.95),
-      rgba(23,71,109,.92)
-    );
-
-  padding:85px 0;
+    background:
+        radial-gradient(circle at 15% 20%,rgba(200,155,60,.16),transparent 28%),
+        linear-gradient(135deg,#071a2d 0%,#0b2945 58%,#123d63 100%);
+    color:#fff;
+    padding:85px 0 95px;
+    position:relative;
+    overflow:hidden;
 }
 
-.hero:after{
-  content:"";
-  position:absolute;
-
-  width:550px;
-  height:550px;
-
-  border:1px solid rgba(209,169,79,.15);
-  border-radius:50%;
-
-  left:-260px;
-  top:-200px;
+.hero:before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    border:1px solid rgba(200,155,60,.18);
+    border-radius:50%;
+    left:-220px;
+    top:-150px;
 }
 
 .hero-grid{
-  position:relative;
-  z-index:2;
-
-  display:grid;
-  grid-template-columns:1.15fr .85fr;
-
-  gap:55px;
-  align-items:center;
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:55px;
+    align-items:center;
 }
 
 .badge{
-  display:inline-block;
-
-  padding:5px 14px;
-
-  border:1px solid rgba(209,169,79,.5);
-  border-radius:30px;
-
-  color:#f0d58e;
-  font-size:13px;
-
-  margin-bottom:17px;
+    display:inline-flex;
+    padding:6px 15px;
+    border:1px solid rgba(224,189,106,.55);
+    border-radius:30px;
+    color:var(--gold2);
+    margin-bottom:20px;
+    font-size:14px;
 }
 
 .hero h1{
-  font-size:clamp(35px,5vw,59px);
-  line-height:1.35;
-  font-weight:900;
-
-  margin-bottom:18px;
+    font-size:clamp(34px,5vw,62px);
+    line-height:1.35;
+    margin-bottom:20px;
+    font-weight:900;
 }
 
 .hero h1 span{
-  color:#d6b35d;
+    color:var(--gold2);
 }
 
 .hero p{
-  max-width:720px;
-  color:#d4dde4;
-  font-size:16px;
+    color:#d7e0e8;
+    font-size:17px;
+    max-width:700px;
+    margin-bottom:30px;
 }
 
 .hero-buttons{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-top:28px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.hero .btn-outline{
+    background:transparent;
+    border-color:#fff;
+    color:#fff;
 }
 
 .hero-card{
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.14);
-
-  border-radius:22px;
-  padding:30px;
-
-  backdrop-filter:blur(8px);
-
-  box-shadow:0 25px 60px rgba(0,0,0,.25);
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:20px;
+    padding:30px;
+    backdrop-filter:blur(8px);
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
 }
 
 .hero-card h3{
-  margin-bottom:17px;
+    color:var(--gold2);
+    margin-bottom:18px;
+    font-size:20px;
 }
 
-.feature{
-  display:flex;
-  align-items:center;
-  gap:12px;
-
-  padding:13px 0;
-
-  border-bottom:1px solid rgba(255,255,255,.1);
+.hero-list{
+    list-style:none;
 }
 
-.feature:last-child{
-  border-bottom:0;
+.hero-list li{
+    padding:13px 0;
+    border-bottom:1px solid rgba(255,255,255,.12);
 }
 
-.feature-icon{
-  width:27px;
-  height:27px;
+.hero-list li:last-child{
+    border-bottom:0;
+}
 
-  border-radius:50%;
+.hero-list span{
+    color:var(--gold2);
+    margin-left:8px;
+}
 
-  display:grid;
-  place-items:center;
+/* STATS */
 
-  background:var(--gold);
-  color:white;
+.stats{
+    margin-top:-35px;
+    position:relative;
+    z-index:3;
+}
 
-  font-size:13px;
+.stats-grid{
+    background:#fff;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    overflow:hidden;
+}
+
+.stat{
+    padding:25px;
+    text-align:center;
+    border-left:1px solid var(--border);
+}
+
+.stat:last-child{
+    border-left:0;
+}
+
+.stat strong{
+    display:block;
+    font-size:28px;
+    color:var(--navy);
+}
+
+.stat span{
+    color:var(--muted);
+    font-size:13px;
 }
 
 /* SECTIONS */
 
 section{
-  padding:80px 0;
+    padding:90px 0;
 }
 
 .section-head{
-  text-align:center;
-  max-width:750px;
-  margin:0 auto 40px;
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 45px;
 }
 
-.kicker{
-  color:var(--gold);
-  font-weight:900;
-  font-size:14px;
+.section-head .eyebrow{
+    color:var(--gold);
+    font-weight:800;
+    margin-bottom:5px;
 }
 
 .section-head h2{
-  font-size:32px;
-  color:var(--navy);
-  margin:5px 0 10px;
+    font-size:34px;
+    color:var(--navy);
+    margin-bottom:10px;
 }
 
 .section-head p{
-  color:var(--muted);
+    color:var(--muted);
 }
 
 /* PRODUCTS */
 
 .products{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+    background:var(--light);
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
 }
 
 .product{
-  background:white;
-
-  border:1px solid var(--border);
-  border-radius:17px;
-
-  padding:26px;
-
-  box-shadow:var(--shadow);
-
-  transition:.25s;
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:27px;
+    transition:.25s;
+    box-shadow:0 5px 18px rgba(7,26,45,.04);
 }
 
 .product:hover{
-  transform:translateY(-5px);
-  border-color:#cbb477;
+    transform:translateY(-7px);
+    box-shadow:var(--shadow);
+    border-color:rgba(200,155,60,.55);
 }
 
 .product-icon{
-  width:53px;
-  height:53px;
-
-  display:grid;
-  place-items:center;
-
-  border-radius:13px;
-
-  background:#f3eee1;
-  color:var(--gold);
-
-  font-size:24px;
-
-  margin-bottom:16px;
+    width:55px;
+    height:55px;
+    border-radius:13px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#edf3f8;
+    color:var(--navy);
+    font-size:25px;
+    margin-bottom:18px;
 }
 
 .product h3{
-  font-size:18px;
-  margin-bottom:7px;
+    color:var(--navy);
+    margin-bottom:9px;
+    font-size:20px;
 }
 
 .product p{
-  color:var(--muted);
-  font-size:13px;
+    color:var(--muted);
+    font-size:14px;
+    margin-bottom:18px;
 }
 
 .product a{
-  display:inline-block;
-  margin-top:12px;
-
-  color:var(--gold);
-  font-weight:800;
+    color:var(--blue);
+    font-weight:700;
 }
 
-/* ABOUT */
+/* WHY */
 
-.about{
-  background:var(--navy);
-  color:white;
+.why-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center;
 }
 
-.about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:55px;
-  align-items:center;
+.why-box{
+    background:var(--navy);
+    color:#fff;
+    border-radius:22px;
+    padding:40px;
+    box-shadow:var(--shadow);
 }
 
-.about h2{
-  font-size:34px;
-  margin:7px 0 15px;
+.why-box h3{
+    color:var(--gold2);
+    font-size:27px;
+    margin-bottom:15px;
 }
 
-.about p{
-  color:#c4d0d9;
-  font-size:14px;
+.why-box p{
+    color:#d5e0e9;
 }
 
-.stats{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px;
-  margin-top:25px;
+.features{
+    display:grid;
+    gap:18px;
 }
 
-.stat{
-  padding:20px;
-
-  background:#102c46;
-  border:1px solid #28465f;
-
-  border-radius:14px;
+.feature{
+    display:flex;
+    gap:16px;
+    align-items:flex-start;
 }
 
-.stat strong{
-  display:block;
-  color:#e0bc63;
-  font-size:20px;
+.feature-icon{
+    flex:none;
+    width:44px;
+    height:44px;
+    border-radius:10px;
+    background:#f6ecd4;
+    color:#8b671b;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:900;
 }
 
-.stat span{
-  color:#b7c4cd;
-  font-size:12px;
+.feature h4{
+    color:var(--navy);
+    margin-bottom:2px;
+}
+
+.feature p{
+    color:var(--muted);
+    font-size:13px;
 }
 
 /* QUOTE */
 
 .quote{
-  background:white;
+    background:var(--light);
 }
 
 .quote-box{
-  background:#fff;
-
-  border:1px solid var(--border);
-  border-radius:20px;
-
-  padding:35px;
-
-  box-shadow:var(--shadow);
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    padding:38px;
 }
 
 .form-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:15px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
 }
 
-.field{
-  display:flex;
-  flex-direction:column;
-  gap:7px;
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:7px;
 }
 
-.field.full{
-  grid-column:1/-1;
+.form-group.full{
+    grid-column:1/-1;
 }
 
-label{
-  font-size:13px;
-  font-weight:800;
+.form-group label{
+    font-weight:700;
+    font-size:14px;
+    color:var(--navy);
 }
 
-input,
-select,
-textarea{
-  width:100%;
-
-  border:1px solid #d6dee4;
-  border-radius:9px;
-
-  padding:12px 14px;
-
-  outline:none;
-
-  background:white;
-
-  font-size:13px;
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    border:1px solid var(--border);
+    background:#fff;
+    padding:13px 14px;
+    border-radius:9px;
+    outline:none;
+    color:var(--text);
+    transition:.2s;
 }
 
-input:focus,
-select:focus,
-textarea:focus{
-  border-color:var(--gold);
-  box-shadow:0 0 0 3px rgba(184,138,43,.1);
+.form-group textarea{
+    min-height:120px;
+    resize:vertical;
 }
 
-textarea{
-  min-height:120px;
-  resize:vertical;
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:var(--gold);
+    box-shadow:0 0 0 3px rgba(200,155,60,.12);
 }
 
 .form-submit{
-  margin-top:18px;
+    margin-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
 }
 
 /* CONTACT */
 
-.contact{
-  background:#f0f3f6;
-}
-
 .contact-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
 }
 
 .contact-card{
-  background:white;
-
-  border:1px solid var(--border);
-  border-radius:17px;
-
-  padding:27px;
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:30px;
+    background:#fff;
 }
 
 .contact-card h3{
-  color:var(--navy);
-  margin-bottom:15px;
+    color:var(--navy);
+    margin-bottom:13px;
+}
+
+.contact-list{
+    display:grid;
+    gap:14px;
+    margin-top:20px;
 }
 
 .contact-item{
-  display:flex;
-  gap:12px;
-  align-items:center;
-
-  padding:13px 0;
-
-  border-bottom:1px solid #edf0f2;
+    padding:14px;
+    background:var(--light);
+    border-radius:10px;
 }
 
-.contact-item:last-child{
-  border-bottom:0;
-}
-
-.contact-icon{
-  width:43px;
-  height:43px;
-
-  display:grid;
-  place-items:center;
-
-  background:#f3eee1;
-  color:var(--gold);
-
-  border-radius:10px;
-}
-
-.contact-item small{
-  display:block;
-  color:var(--muted);
-  font-size:11px;
+.contact-item span{
+    display:block;
+    font-size:12px;
+    color:var(--muted);
 }
 
 .contact-item a{
-  direction:ltr;
-  display:inline-block;
-  font-weight:800;
-  color:var(--navy);
+    font-weight:800;
+    color:var(--navy);
 }
 
 .contact-actions{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-top:22px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
 }
 
 /* FOOTER */
 
 footer{
-  background:#050f1a;
-  color:#c7d0d7;
-
-  padding:45px 0 22px;
+    background:var(--navy);
+    color:#d8e1e8;
+    padding:55px 0 20px;
 }
 
 .footer-grid{
-  display:grid;
-  grid-template-columns:1.2fr .8fr .8fr;
-  gap:35px;
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr;
+    gap:45px;
 }
 
 footer h3,
 footer h4{
-  color:white;
-  margin-bottom:12px;
+    color:#fff;
+    margin-bottom:15px;
 }
 
-footer p,
-footer a{
-  font-size:13px;
+footer p{
+    color:#aebdca;
+    font-size:14px;
 }
 
-footer a{
-  display:block;
-  margin:6px 0;
+.footer-links{
+    list-style:none;
+    display:grid;
+    gap:8px;
 }
 
-footer a:hover{
-  color:#d6b35d;
+.footer-links a:hover{
+    color:var(--gold2);
 }
 
-.copy{
-  border-top:1px solid #263541;
-  margin-top:30px;
-  padding-top:18px;
-
-  text-align:center;
-
-  color:#84919b;
-  font-size:11px;
+.copyright{
+    border-top:1px solid rgba(255,255,255,.1);
+    margin-top:40px;
+    padding-top:20px;
+    text-align:center;
+    font-size:12px;
+    color:#91a2b0;
 }
 
-/* FLOAT */
+/* FLOATING BUTTONS */
 
-.whatsapp{
-  position:fixed;
-
-  left:20px;
-  bottom:20px;
-
-  width:56px;
-  height:56px;
-
-  display:grid;
-  place-items:center;
-
-  border-radius:50%;
-
-  background:#25d366;
-  color:white;
-
-  font-size:26px;
-
-  box-shadow:0 10px 25px rgba(0,0,0,.2);
-
-  z-index:500;
+.whatsapp-float{
+    position:fixed;
+    left:22px;
+    bottom:22px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#19b968;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+    box-shadow:0 8px 25px rgba(25,185,104,.35);
+    z-index:2000;
 }
 
-.assistant{
-  position:fixed;
+.ai-button{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    background:var(--navy);
+    color:#fff;
+    border:1px solid var(--gold);
+    padding:13px 19px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:700;
+    box-shadow:var(--shadow);
+    z-index:2000;
+}
 
-  right:20px;
-  bottom:20px;
+/* AI BOX */
 
-  padding:12px 18px;
+.ai-panel{
+    position:fixed;
+    right:22px;
+    bottom:82px;
+    width:min(370px,calc(100% - 44px));
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 20px 70px rgba(0,0,0,.2);
+    overflow:hidden;
+    z-index:1999;
+    display:none;
+    border:1px solid var(--border);
+}
 
-  background:var(--navy);
-  color:white;
+.ai-panel.open{
+    display:block;
+}
 
-  border:1px solid var(--gold);
+.ai-head{
+    background:var(--navy);
+    color:#fff;
+    padding:17px 20px;
+    display:flex;
+    justify-content:space-between;
+}
 
-  border-radius:30px;
+.ai-head button{
+    background:transparent;
+    color:#fff;
+    border:0;
+    cursor:pointer;
+    font-size:18px;
+}
 
-  font-size:12px;
-  font-weight:800;
+.ai-body{
+    padding:18px;
+}
 
-  z-index:500;
+.ai-message{
+    background:var(--light);
+    padding:12px;
+    border-radius:10px;
+    font-size:13px;
+    margin-bottom:12px;
+}
+
+.ai-options{
+    display:grid;
+    gap:8px;
+}
+
+.ai-options button{
+    border:1px solid var(--border);
+    background:#fff;
+    padding:10px;
+    border-radius:8px;
+    cursor:pointer;
+    text-align:right;
+}
+
+.ai-options button:hover{
+    border-color:var(--gold);
+    background:#fffaf0;
 }
 
 /* MOBILE */
 
+.mobile-menu{
+    display:none;
+    background:transparent;
+    border:0;
+    font-size:28px;
+    color:var(--navy);
+    cursor:pointer;
+}
+
 @media(max-width:900px){
 
-  .menu{
-    display:none;
-  }
+    .nav{
+        display:none;
+        position:absolute;
+        top:82px;
+        right:0;
+        left:0;
+        background:#fff;
+        padding:20px 5%;
+        flex-direction:column;
+        align-items:flex-start;
+        box-shadow:0 15px 30px rgba(0,0,0,.1);
+    }
 
-  .hero-grid,
-  .about-grid,
-  .contact-grid{
-    grid-template-columns:1fr;
-  }
+    .nav.open{
+        display:flex;
+    }
 
-  .products{
-    grid-template-columns:1fr 1fr;
-  }
+    .mobile-menu{
+        display:block;
+    }
 
+    .nav-actions{
+        display:none;
+    }
+
+    .hero-grid,
+    .why-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stat{
+        border-bottom:1px solid var(--border);
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
 }
 
 @media(max-width:600px){
 
-  .topbar-inner{
-    justify-content:center;
-  }
+    .topbar-inner{
+        flex-direction:column;
+        padding:8px 0;
+        gap:2px;
+    }
 
-  .topbar-inner>span{
-    display:none;
-  }
+    .brand{
+        font-size:16px;
+    }
 
-  .brand-name{
-    font-size:16px;
-  }
+    .logo{
+        width:42px;
+        height:42px;
+    }
 
-  .brand-logo{
-    width:44px;
-    height:44px;
-  }
+    .hero{
+        padding:55px 0 70px;
+    }
 
-  .nav-actions .btn-outline{
-    display:none;
-  }
+    .hero h1{
+        font-size:34px;
+    }
 
-  .hero{
-    padding:60px 0;
-  }
+    .hero p{
+        font-size:14px;
+    }
 
-  .hero h1{
-    font-size:34px;
-  }
+    .hero-card{
+        padding:22px;
+    }
 
-  .products,
-  .form-grid,
-  .footer-grid{
-    grid-template-columns:1fr;
-  }
+    .product-grid,
+    .form-grid,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
 
-  .field.full{
-    grid-column:auto;
-  }
+    .form-group.full{
+        grid-column:auto;
+    }
 
-  .hero-buttons .btn{
-    width:100%;
-  }
+    section{
+        padding:65px 0;
+    }
 
-  section{
-    padding:60px 0;
-  }
+    .section-head h2{
+        font-size:27px;
+    }
 
+    .stats-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .stat{
+        padding:18px 8px;
+    }
+
+    .stat strong{
+        font-size:22px;
+    }
 }
+
 </style>
 </head>
 
 <body>
 
 <!-- TOP BAR -->
-
 <div class="topbar">
+    <div class="container topbar-inner">
 
-  <div class="container topbar-inner">
+        <div>
+            تأمین و فروش تخصصی محصولات فولادی
+        </div>
 
-    <span>تأمین و فروش تخصصی محصولات فولادی</span>
-
-    <div class="top-contact">
-
-      <a href="tel:02188000571">
-        ☎ 021-88000571 الی 3
-      </a>
-
-      <a href="tel:09122971961">
-        📱 09122971961
-      </a>
+        <div class="top-links">
+            <a href="tel:02188000571">☎ 021-88000571 الی 3</a>
+            <a href="tel:09122971961">📱 09122971961</a>
+        </div>
 
     </div>
-
-  </div>
-
 </div>
 
 
 <!-- HEADER -->
-
 <header>
 
-<div class="container nav">
+<div class="container navbar">
 
-<a href="#home" class="brand">
+    <a href="#home" class="brand">
 
-<div class="brand-logo">
-PF
-</div>
+        <div class="logo">
+            PF
+        </div>
 
-<div class="brand-name">
+        <span>
+            پیشگام فولاد پاسارگاد
+        </span>
 
-پیشگام فولاد پاسارگاد
-
-<span>
-تأمین و فروش محصولات فولادی
-</span>
-
-</div>
-
-</a>
+    </a>
 
 
-<nav class="menu">
-
-<a href="#home">خانه</a>
-
-<a href="#products">محصولات</a>
-
-<a href="#about">درباره ما</a>
-
-<a href="#quote">استعلام قیمت</a>
-
-<a href="#contact">تماس با ما</a>
-
-</nav>
+    <button class="mobile-menu" onclick="toggleMenu()">
+        ☰
+    </button>
 
 
-<div>
+    <nav class="nav" id="nav">
 
-<a class="btn btn-outline"
-href="tel:02188000571">
-تماس مستقیم
-</a>
+        <a href="#home">خانه</a>
+        <a href="#products">محصولات</a>
+        <a href="#about">درباره ما</a>
+        <a href="#services">خدمات</a>
+        <a href="#quote">استعلام قیمت</a>
+        <a href="#contact">تماس با ما</a>
 
-<a class="btn btn-gold"
-href="#quote">
-استعلام قیمت
-</a>
+    </nav>
 
-</div>
+
+    <div class="nav-actions">
+
+        <a href="#quote" class="btn btn-gold">
+            استعلام قیمت
+        </a>
+
+        <a href="tel:02188000571" class="btn btn-outline">
+            تماس مستقیم
+        </a>
+
+    </div>
 
 </div>
 
@@ -865,241 +960,242 @@ href="#quote">
 
 
 <!-- HERO -->
-
 <section class="hero" id="home">
 
 <div class="container hero-grid">
 
-<div>
+    <div>
 
-<span class="badge">
-گروه پیشگام فولاد پاسارگاد
-</span>
+        <div class="badge">
+            گروه پیشگام فولاد پاسارگاد
+        </div>
 
-<h1>
+        <h1>
+            تأمین مطمئن
+            <span>محصولات فولادی</span>
+            برای پروژه‌های شما
+        </h1>
 
-تأمین مطمئن محصولات
+        <p>
+            پیشگام فولاد پاسارگاد با تمرکز بر تأمین و فروش محصولات فولادی،
+            ارائه قیمت، مشاوره تخصصی و خدمات تأمین، همراه مطمئن پروژه‌های
+            ساختمانی، صنعتی و تجاری شماست.
+        </p>
 
-<span>فولادی</span>
+        <div class="hero-buttons">
 
-برای پروژه‌های شما
+            <a href="#quote" class="btn btn-gold">
+                💰 دریافت استعلام قیمت
+            </a>
 
-</h1>
+            <a href="#products" class="btn btn-outline">
+                مشاهده محصولات
+            </a>
 
-<p>
+        </div>
 
-پیشگام فولاد پاسارگاد با تمرکز بر تأمین و فروش محصولات فولادی،
-آماده ارائه قیمت، مشاوره و خدمات تخصصی به مشتریان صنعتی،
-ساختمانی و تجاری است.
-
-</p>
-
-<div class="hero-buttons">
-
-<a class="btn btn-gold"
-href="#quote">
-
-💰 دریافت استعلام قیمت
-
-</a>
-
-<a class="btn btn-outline"
-style="background:transparent;color:white;border-color:#fff"
-href="#products">
-
-📦 مشاهده محصولات
-
-</a>
-
-</div>
-
-</div>
+    </div>
 
 
-<div class="hero-card">
+    <div class="hero-card">
 
-<h3>
-پیشگام فولاد پاسارگاد
-</h3>
+        <h3>
+            پیشگام فولاد؛ یک نگاه
+        </h3>
 
-<div class="feature">
-<span class="feature-icon">✓</span>
-<span>تأمین محصولات فولادی</span>
-</div>
+        <ul class="hero-list">
 
-<div class="feature">
-<span class="feature-icon">✓</span>
-<span>مشاوره تخصصی خرید</span>
-</div>
+            <li>
+                <span>✓</span>
+                تأمین محصولات فولادی
+            </li>
 
-<div class="feature">
-<span class="feature-icon">✓</span>
-<span>استعلام و اعلام قیمت</span>
-</div>
+            <li>
+                <span>✓</span>
+                مشاوره تخصصی خرید
+            </li>
 
-<div class="feature">
-<span class="feature-icon">✓</span>
-<span>پاسخگویی سریع</span>
-</div>
+            <li>
+                <span>✓</span>
+                استعلام و ارائه قیمت
+            </li>
 
-</div>
+            <li>
+                <span>✓</span>
+                پاسخگویی سریع
+            </li>
+
+        </ul>
+
+    </div>
 
 </div>
 
 </section>
 
 
-<!-- PRODUCTS -->
+<!-- STATS -->
+<div class="stats">
 
-<section id="products">
+<div class="container stats-grid">
+
+    <div class="stat">
+        <strong>✓</strong>
+        <span>تأمین تخصصی</span>
+    </div>
+
+    <div class="stat">
+        <strong>24/7</strong>
+        <span>پاسخگویی و ارتباط</span>
+    </div>
+
+    <div class="stat">
+        <strong>PF</strong>
+        <span>پیشگام فولاد پاسارگاد</span>
+    </div>
+
+    <div class="stat">
+        <strong>قیمت</strong>
+        <span>استعلام سریع</span>
+    </div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
 
 <div class="container">
 
 <div class="section-head">
 
-<span class="kicker">
-محصولات فولادی
-</span>
+    <div class="eyebrow">
+        محصولات فولادی
+    </div>
 
-<h2>
-محصولات مورد نیاز پروژه خود را پیدا کنید
-</h2>
+    <h2>
+        محصولات مورد نیاز پروژه خود را پیدا کنید
+    </h2>
 
-<p>
-برای دریافت اطلاعات فنی و قیمت روز محصولات،
-با کارشناسان پیشگام فولاد پاسارگاد تماس بگیرید.
-</p>
-
-</div>
-
-
-<div class="products">
-
-
-<div class="product">
-
-<div class="product-icon">
-🏗️
-</div>
-
-<h3>
-تیرآهن
-</h3>
-
-<p>
-تأمین انواع تیرآهن مورد نیاز پروژه‌های ساختمانی و صنعتی.
-</p>
-
-<a href="#quote">
-استعلام قیمت ←
-</a>
+    <p>
+        برای دریافت اطلاعات فنی و قیمت روز محصولات،
+        با کارشناسان پیشگام فولاد پاسارگاد در ارتباط باشید.
+    </p>
 
 </div>
 
 
-<div class="product">
-
-<div class="product-icon">
-▤
-</div>
-
-<h3>
-میلگرد
-</h3>
-
-<p>
-تأمین میلگرد در سایزها و استانداردهای مورد نیاز پروژه.
-</p>
-
-<a href="#quote">
-استعلام قیمت ←
-</a>
-
-</div>
+<div class="product-grid">
 
 
-<div class="product">
+    <div class="product">
 
-<div class="product-icon">
-▰
-</div>
+        <div class="product-icon">▰</div>
 
-<h3>
-ورق فولادی
-</h3>
+        <h3>تیرآهن</h3>
 
-<p>
-تأمین ورق‌های فولادی برای کاربردهای صنعتی و ساختمانی.
-</p>
+        <p>
+            تأمین انواع تیرآهن مورد استفاده در پروژه‌های
+            ساختمانی و صنعتی.
+        </p>
 
-<a href="#quote">
-استعلام قیمت ←
-</a>
+        <a href="#quote">
+            استعلام قیمت ←
+        </a>
 
-</div>
+    </div>
 
 
-<div class="product">
+    <div class="product">
 
-<div class="product-icon">
-◫
-</div>
+        <div class="product-icon">▤</div>
 
-<h3>
-قوطی و پروفیل
-</h3>
+        <h3>میلگرد</h3>
 
-<p>
-انواع قوطی و پروفیل فولادی مناسب ساخت‌وساز و صنعت.
-</p>
+        <p>
+            تأمین میلگرد مورد نیاز پروژه‌های عمرانی
+            با امکان استعلام قیمت روز.
+        </p>
 
-<a href="#quote">
-استعلام قیمت ←
-</a>
+        <a href="#quote">
+            استعلام قیمت ←
+        </a>
 
-</div>
+    </div>
 
 
-<div class="product">
+    <div class="product">
 
-<div class="product-icon">
-⚙
-</div>
+        <div class="product-icon">▥</div>
 
-<h3>
-محصولات صنعتی
-</h3>
+        <h3>ورق فولادی</h3>
 
-<p>
-تأمین محصولات فولادی متناسب با نیاز و مشخصات فنی پروژه.
-</p>
+        <p>
+            عرضه و تأمین انواع ورق فولادی برای
+            مصارف ساختمانی و صنعتی.
+        </p>
 
-<a href="#quote">
-استعلام قیمت ←
-</a>
+        <a href="#quote">
+            استعلام قیمت ←
+        </a>
 
-</div>
+    </div>
 
 
-<div class="product">
+    <div class="product">
 
-<div class="product-icon">
-📦
-</div>
+        <div class="product-icon">▱</div>
 
-<h3>
-سفارش اختصاصی
-</h3>
+        <h3>نبشی</h3>
 
-<p>
-محصول مورد نیازتان در فهرست نیست؟ درخواست خود را ارسال کنید.
-</p>
+        <p>
+            تأمین نبشی در ابعاد و مشخصات مختلف
+            متناسب با نیاز پروژه.
+        </p>
 
-<a href="#quote">
-ثبت درخواست ←
-</a>
+        <a href="#quote">
+            استعلام قیمت ←
+        </a>
 
-</div>
+    </div>
+
+
+    <div class="product">
+
+        <div class="product-icon">▰</div>
+
+        <h3>ناودانی</h3>
+
+        <p>
+            تأمین ناودانی برای پروژه‌های عمرانی،
+            صنعتی و سازه‌ای.
+        </p>
+
+        <a href="#quote">
+            استعلام قیمت ←
+        </a>
+
+    </div>
+
+
+    <div class="product">
+
+        <div class="product-icon">⚙</div>
+
+        <h3>سایر مقاطع فولادی</h3>
+
+        <p>
+            برای سایر محصولات و مقاطع فولادی
+            با کارشناسان ما تماس بگیرید.
+        </p>
+
+        <a href="#contact">
+            تماس با کارشناسان ←
+        </a>
+
+    </div>
 
 
 </div>
@@ -1109,108 +1205,132 @@ href="#products">
 </section>
 
 
-<!-- ABOUT -->
+<!-- ABOUT / WHY -->
+<section id="about">
 
-<section class="about" id="about">
-
-<div class="container about-grid">
-
-<div>
-
-<span class="kicker">
-درباره ما
-</span>
-
-<h2>
-پیشگام فولاد پاسارگاد
-</h2>
-
-<p>
-
-هدف ما ایجاد مسیری مطمئن برای تأمین محصولات فولادی مورد نیاز
-پروژه‌هاست؛ از استعلام و مشاوره تا انتخاب محصول و پیگیری سفارش.
-
-</p>
-
-<div class="stats">
-
-<div class="stat">
-<strong>تأمین</strong>
-<span>محصولات فولادی پروژه‌ها</span>
-</div>
-
-<div class="stat">
-<strong>مشاوره</strong>
-<span>راهنمایی تخصصی خرید</span>
-</div>
-
-<div class="stat">
-<strong>قیمت روز</strong>
-<span>استعلام و بررسی قیمت</span>
-</div>
-
-<div class="stat">
-<strong>پاسخگویی</strong>
-<span>ارتباط سریع با کارشناسان</span>
-</div>
-
-</div>
-
-</div>
+<div class="container why-grid">
 
 
-<div class="hero-card">
+    <div class="why-box">
 
-<h3>
-چرا پیشگام فولاد پاسارگاد؟
-</h3>
+        <h3>
+            پیشگام فولاد پاسارگاد
+        </h3>
 
-<div class="feature">
-<span class="feature-icon">✓</span>
-<span>تمرکز بر نیاز واقعی پروژه</span>
-</div>
+        <p>
+            هدف ما ایجاد یک مسیر مطمئن برای خرید و تأمین
+            محصولات فولادی مورد نیاز مشتریان است؛
+            از استعلام قیمت تا انتخاب محصول و هماهنگی تأمین.
+        </p>
 
-<div class="feature">
-<span class="feature-icon">✓</span>
-<span>پاسخگویی سریع به استعلام‌ها</span>
-</div>
+        <br>
 
-<div class="feature">
-<span class="feature-icon">✓</span>
-<span>مشاوره قبل از خرید</span>
-</div>
+        <a href="#quote" class="btn btn-gold">
+            درخواست استعلام قیمت
+        </a>
 
-<div class="feature">
-<span class="feature-icon">✓</span>
-<span>ارتباط مستقیم با مجموعه</span>
-</div>
+    </div>
 
-</div>
+
+    <div class="features" id="services">
+
+        <div class="feature">
+
+            <div class="feature-icon">✓</div>
+
+            <div>
+
+                <h4>مشاوره تخصصی</h4>
+
+                <p>
+                    راهنمایی برای انتخاب محصول متناسب
+                    با نیاز پروژه.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">₽</div>
+
+            <div>
+
+                <h4>استعلام قیمت</h4>
+
+                <p>
+                    دریافت درخواست شما و پیگیری
+                    قیمت محصول مورد نظر.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">⚡</div>
+
+            <div>
+
+                <h4>پاسخگویی سریع</h4>
+
+                <p>
+                    ارتباط مستقیم با کارشناسان
+                    برای پیگیری سفارش.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">▣</div>
+
+            <div>
+
+                <h4>تأمین محصولات فولادی</h4>
+
+                <p>
+                    تمرکز بر تأمین محصولات فولادی
+                    مورد نیاز مشتریان و پروژه‌ها.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
 
 </section>
 
 
-<!-- QUOTE -->
-
+<!-- QUOTE FORM -->
 <section class="quote" id="quote">
 
 <div class="container">
 
 <div class="section-head">
 
-<span class="kicker">
-استعلام قیمت
-</span>
+    <div class="eyebrow">
+        استعلام قیمت
+    </div>
 
-<h2>
-درخواست قیمت محصولات فولادی
-</h2>
+    <h2>
+        درخواست قیمت محصول
+    </h2>
 
-<p>
-مشخصات محصول مورد نیاز را وارد کنید تا درخواست شما آماده ارسال شود.
-</p>
+    <p>
+        مشخصات محصول مورد نظر را وارد کنید.
+        درخواست شما از طریق واتساپ برای کارشناسان ارسال می‌شود.
+    </p>
 
 </div>
 
@@ -1222,97 +1342,125 @@ href="#products">
 <div class="form-grid">
 
 
-<div class="field">
+    <div class="form-group">
 
-<label>
-نام و نام خانوادگی
-</label>
+        <label>
+            نام و نام خانوادگی
+        </label>
 
-<input
-id="name"
-required
-placeholder="نام شما">
+        <input
+            id="name"
+            type="text"
+            placeholder="نام شما"
+            required
+        >
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>
+            شماره تماس
+        </label>
+
+        <input
+            id="phone"
+            type="tel"
+            placeholder="0912..."
+            required
+        >
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>
+            محصول مورد نظر
+        </label>
+
+        <select id="product" required>
+
+            <option value="">
+                انتخاب محصول
+            </option>
+
+            <option>
+                تیرآهن
+            </option>
+
+            <option>
+                میلگرد
+            </option>
+
+            <option>
+                ورق فولادی
+            </option>
+
+            <option>
+                نبشی
+            </option>
+
+            <option>
+                ناودانی
+            </option>
+
+            <option>
+                سایر مقاطع فولادی
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>
+            مقدار / تناژ
+        </label>
+
+        <input
+            id="amount"
+            type="text"
+            placeholder="مثلاً 10 تن"
+        >
+
+    </div>
+
+
+    <div class="form-group full">
+
+        <label>
+            توضیحات
+        </label>
+
+        <textarea
+            id="message"
+            placeholder="ابعاد، سایز، استاندارد یا توضیحات مورد نیاز..."
+        ></textarea>
+
+    </div>
+
 
 </div>
 
 
-<div class="field">
+<div class="form-submit">
 
-<label>
-شماره تماس
-</label>
+    <button class="btn btn-primary" type="submit">
+        📲 ارسال استعلام در واتساپ
+    </button>
 
-<input
-id="phone"
-required
-type="tel"
-placeholder="0912...">
-
-</div>
-
-
-<div class="field">
-
-<label>
-محصول مورد نظر
-</label>
-
-<select id="product">
-
-<option>تیرآهن</option>
-
-<option>میلگرد</option>
-
-<option>ورق فولادی</option>
-
-<option>قوطی و پروفیل</option>
-
-<option>لوله فولادی</option>
-
-<option>سایر</option>
-
-</select>
+    <a
+        href="tel:02188000571"
+        class="btn btn-gold"
+    >
+        ☎ تماس با کارشناسان
+    </a>
 
 </div>
-
-
-<div class="field">
-
-<label>
-مقدار مورد نیاز
-</label>
-
-<input
-id="amount"
-placeholder="مثلاً 10 تن">
-
-</div>
-
-
-<div class="field full">
-
-<label>
-توضیحات
-</label>
-
-<textarea
-id="message"
-placeholder="سایز، استاندارد، محل تحویل و توضیحات پروژه...">
-</textarea>
-
-</div>
-
-
-</div>
-
-
-<button
-class="btn btn-gold form-submit"
-type="submit">
-
-📩 ارسال درخواست استعلام
-
-</button>
 
 </form>
 
@@ -1324,24 +1472,24 @@ type="submit">
 
 
 <!-- CONTACT -->
-
-<section class="contact" id="contact">
+<section id="contact">
 
 <div class="container">
 
 <div class="section-head">
 
-<span class="kicker">
-ارتباط با ما
-</span>
+    <div class="eyebrow">
+        ارتباط با ما
+    </div>
 
-<h2>
-با پیشگام فولاد پاسارگاد در تماس باشید
-</h2>
+    <h2>
+        با پیشگام فولاد پاسارگاد در تماس باشید
+    </h2>
 
-<p>
-برای خرید، مشاوره و استعلام قیمت با ما ارتباط بگیرید.
-</p>
+    <p>
+        برای دریافت قیمت، مشاوره و پیگیری تأمین محصولات فولادی
+        با ما تماس بگیرید.
+    </p>
 
 </div>
 
@@ -1351,119 +1499,99 @@ type="submit">
 
 <div class="contact-card">
 
-<h3>
-اطلاعات تماس
-</h3>
+    <h3>
+        اطلاعات تماس
+    </h3>
+
+    <p>
+        کارشناسان ما آماده پاسخگویی و بررسی درخواست‌های شما هستند.
+    </p>
 
 
-<div class="contact-item">
+    <div class="contact-list">
 
-<div class="contact-icon">
-☎
-</div>
+        <div class="contact-item">
 
-<div>
+            <span>
+                تلفن دفتر
+            </span>
 
-<small>
-دفتر
-</small>
+            <a href="tel:02188000571">
+                021-88000571 الی 3
+            </a>
 
-<a href="tel:02188000571">
-021-88000571 الی 3
-</a>
-
-</div>
-
-</div>
+        </div>
 
 
-<div class="contact-item">
+        <div class="contact-item">
 
-<div class="contact-icon">
-📱
-</div>
+            <span>
+                شماره همراه
+            </span>
 
-<div>
+            <a href="tel:09122971961">
+                09122971961
+            </a>
 
-<small>
-همراه
-</small>
-
-<a href="tel:09122971961">
-09122971961
-</a>
-
-</div>
-
-</div>
+        </div>
 
 
-<div class="contact-item">
+        <div class="contact-item">
 
-<div class="contact-icon">
-💬
-</div>
+            <span>
+                واتساپ
+            </span>
 
-<div>
+            <a
+                href="https://wa.me/989122971961"
+                target="_blank"
+            >
+                گفتگو در واتساپ
+            </a>
 
-<small>
-واتساپ
-</small>
+        </div>
 
-<span>
-ارتباط سریع برای استعلام
-</span>
-
-</div>
-
-</div>
+    </div>
 
 
-<div class="contact-actions">
+    <div class="contact-actions">
 
-<a
-class="btn btn-gold"
-href="tel:02188000571">
+        <a
+            href="tel:02188000571"
+            class="btn btn-primary"
+        >
+            ☎ تماس مستقیم
+        </a>
 
-☎ تماس با دفتر
+        <a
+            href="https://wa.me/989122971961"
+            target="_blank"
+            class="btn btn-gold"
+        >
+            💬 واتساپ
+        </a>
 
-</a>
-
-<a
-class="btn btn-outline"
-href="https://wa.me/989122971961"
-target="_blank">
-
-واتساپ
-
-</a>
-
-</div>
+    </div>
 
 </div>
 
 
 <div class="contact-card">
 
-<h3>
-استعلام سریع
-</h3>
+    <h3>
+        چرا با ما تماس بگیرید؟
+    </h3>
 
-<p style="color:var(--muted)">
+    <p>
+        اگر محصول، سایز یا تناژ مورد نظر خود را می‌دانید،
+        برای دریافت قیمت و بررسی موجودی با ما در ارتباط باشید.
+    </p>
 
-نام محصول، سایز و مقدار مورد نیازتان را وارد کنید
-تا درخواست شما برای کارشناسان آماده شود.
+    <br>
 
-</p>
-
-<a
-class="btn btn-gold"
-style="margin-top:22px"
-href="#quote">
-
-ثبت استعلام قیمت
-
-</a>
+    <a href="#quote" class="btn btn-primary">
+        ثبت درخواست استعلام
+    </a>
 
 </div>
 
@@ -1476,74 +1604,106 @@ href="#quote">
 
 
 <!-- FOOTER -->
-
 <footer>
 
-<div class="container footer-grid">
+<div class="container">
+
+<div class="footer-grid">
 
 
-<div>
+    <div>
 
-<h3>
-پیشگام فولاد پاسارگاد
-</h3>
+        <div class="brand" style="color:#fff;margin-bottom:15px;">
 
-<p>
-تأمین و فروش محصولات فولادی برای پروژه‌های ساختمانی،
-صنعتی و تجاری.
-</p>
+            <div class="logo">
+                PF
+            </div>
+
+            <span>
+                پیشگام فولاد پاسارگاد
+            </span>
+
+        </div>
+
+        <p>
+            تأمین و فروش تخصصی محصولات فولادی
+            برای پروژه‌های ساختمانی، صنعتی و تجاری.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <h4>
+            دسترسی سریع
+        </h4>
+
+        <ul class="footer-links">
+
+            <li>
+                <a href="#home">خانه</a>
+            </li>
+
+            <li>
+                <a href="#products">محصولات</a>
+            </li>
+
+            <li>
+                <a href="#about">درباره ما</a>
+            </li>
+
+            <li>
+                <a href="#quote">استعلام قیمت</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div>
+
+        <h4>
+            تماس
+        </h4>
+
+        <ul class="footer-links">
+
+            <li>
+                <a href="tel:02188000571">
+                    021-88000571 الی 3
+                </a>
+            </li>
+
+            <li>
+                <a href="tel:09122971961">
+                    09122971961
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="https://wa.me/989122971961"
+                    target="_blank"
+                >
+                    واتساپ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
 
 </div>
 
 
-<div>
+<div class="copyright">
 
-<h4>
-دسترسی سریع
-</h4>
-
-<a href="#products">
-محصولات
-</a>
-
-<a href="#about">
-درباره ما
-</a>
-
-<a href="#quote">
-استعلام قیمت
-</a>
-
-<a href="#contact">
-تماس با ما
-</a>
+    © ۱۴۰۵ پیشگام فولاد پاسارگاد — تمامی حقوق محفوظ است.
 
 </div>
-
-
-<div>
-
-<h4>
-تماس
-</h4>
-
-<a href="tel:02188000571">
-021-88000571 الی 3
-</a>
-
-<a href="tel:09122971961">
-09122971961
-</a>
-
-</div>
-
-
-</div>
-
-
-<div class="container copy">
-
-© تمامی حقوق برای پیشگام فولاد پاسارگاد محفوظ است.
 
 </div>
 
@@ -1551,73 +1711,189 @@ href="#quote">
 
 
 <!-- WHATSAPP -->
-
 <a
-class="whatsapp"
-href="https://wa.me/989122971961"
-target="_blank"
-aria-label="واتساپ">
-
-◉
-
+    class="whatsapp-float"
+    href="https://wa.me/989122971961"
+    target="_blank"
+    title="واتساپ"
+>
+    💬
 </a>
 
 
-<!-- ASSISTANT -->
+<!-- AI BUTTON -->
+<button class="ai-button" onclick="toggleAI()">
+    🤖 دستیار هوشمند
+</button>
 
-<a
-class="assistant"
-href="#quote">
 
-🤖 دستیار هوشمند
+<!-- AI PANEL -->
+<div class="ai-panel" id="aiPanel">
 
-</a>
+<div class="ai-head">
+
+    <strong>
+        دستیار پیشگام فولاد
+    </strong>
+
+    <button onclick="toggleAI()">
+        ×
+    </button>
+
+</div>
+
+
+<div class="ai-body">
+
+    <div class="ai-message">
+        سلام! برای راهنمایی سریع، یکی از گزینه‌های زیر را انتخاب کنید:
+    </div>
+
+
+    <div class="ai-options">
+
+        <button onclick="aiAnswer('برای دریافت قیمت محصول، فرم استعلام قیمت سایت را تکمیل کنید یا با شماره 021-88000571 تماس بگیرید.')">
+            💰 استعلام قیمت
+        </button>
+
+        <button onclick="aiAnswer('برای معرفی محصولات فولادی، بخش محصولات سایت را مشاهده کنید.')">
+            📦 معرفی محصولات
+        </button>
+
+        <button onclick="aiAnswer('برای ارتباط مستقیم با کارشناسان با 021-88000571 الی 3 تماس بگیرید.')">
+            ☎ تماس با کارشناسان
+        </button>
+
+        <button onclick="aiAnswer('برای ارتباط در واتساپ روی دکمه واتساپ پایین صفحه کلیک کنید.')">
+            💬 واتساپ
+        </button>
+
+    </div>
+
+</div>
+
+</div>
 
 
 <script>
 
+/* MOBILE MENU */
+
+function toggleMenu(){
+
+    document
+        .getElementById("nav")
+        .classList
+        .toggle("open");
+
+}
+
+
+/* AI */
+
+function toggleAI(){
+
+    document
+        .getElementById("aiPanel")
+        .classList
+        .toggle("open");
+
+}
+
+
+function aiAnswer(text){
+
+    const body =
+        document.querySelector(".ai-body");
+
+    body.innerHTML = `
+
+        <div class="ai-message">
+            ${text}
+        </div>
+
+        <div class="ai-options">
+
+            <button onclick="location.href='#quote';toggleAI();">
+                💰 ثبت استعلام قیمت
+            </button>
+
+            <button onclick="toggleAI()">
+                بستن
+            </button>
+
+        </div>
+
+    `;
+
+}
+
+
+/* QUOTE -> WHATSAPP */
+
 function sendQuote(event){
 
-event.preventDefault();
+    event.preventDefault();
 
-const name =
-document.getElementById("name").value.trim();
+    const name =
+        document.getElementById("name").value.trim();
 
-const phone =
-document.getElementById("phone").value.trim();
+    const phone =
+        document.getElementById("phone").value.trim();
 
-const product =
-document.getElementById("product").value;
+    const product =
+        document.getElementById("product").value;
 
-const amount =
-document.getElementById("amount").value.trim();
+    const amount =
+        document.getElementById("amount").value.trim();
 
-const message =
-document.getElementById("message").value.trim();
+    const message =
+        document.getElementById("message").value.trim();
 
 
-const text =
-
+    const text =
 `سلام، برای استعلام قیمت از پیشگام فولاد پاسارگاد پیام می‌دهم.
 
 نام: ${name}
-
 شماره تماس: ${phone}
-
 محصول: ${product}
+مقدار / تناژ: ${amount || "اعلام نشده"}
 
-مقدار: ${amount || "-"}
+توضیحات:
+${message || "ندارد"}`;
 
-توضیحات: ${message || "-"}`;
+
+    const url =
+        "https://wa.me/989122971961?text="
+        + encodeURIComponent(text);
 
 
-window.open(
-"https://wa.me/989122971961?text="
-+ encodeURIComponent(text),
-"_blank"
-);
+    window.open(url,"_blank");
 
 }
+
+
+/* CLOSE AI WHEN CLICK OUTSIDE */
+
+document.addEventListener("click",function(e){
+
+    const panel =
+        document.getElementById("aiPanel");
+
+    const button =
+        document.querySelector(".ai-button");
+
+    if(
+        panel.classList.contains("open") &&
+        !panel.contains(e.target) &&
+        !button.contains(e.target)
+    ){
+
+        panel.classList.remove("open");
+
+    }
+
+});
 
 </script>
 
